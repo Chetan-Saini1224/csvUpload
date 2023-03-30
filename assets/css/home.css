@@ -1,0 +1,52 @@
+main {
+  display: flex;
+  margin: 1% 1% 0 1%;
+  height: 100%;
+}
+
+#left-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-right: 2%;
+  background-color: rgb(224, 221, 221);
+}
+
+#left-section #input-fields {
+  height: 23%;
+}
+
+#left-section #files-list {
+  height: 60%;
+  overflow: auto;
+}
+
+#right-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.active {
+  background-color: rgb(69, 69, 255);
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#myInput {
+  width: 30%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+table {
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 13px;
+}
