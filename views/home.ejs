@@ -83,8 +83,10 @@
         <table class="table table-hover" id="myTable">
           <thead id="headings">
             <tr>
-              <%let idx = 1 %> <% for(let col of headings) {%>
-              <th onclick="sortTable(<%= idx++ %>)"><%= col %></th>
+              <%let idx = 0 %> <% for(let col of headings) {%>
+              <th>
+                <small onclick="sortTable(<%= idx++ %>)">^</small> <%= col %>
+              </th>
               <%}%>
             </tr>
           </thead>

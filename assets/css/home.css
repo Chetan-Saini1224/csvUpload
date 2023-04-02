@@ -50,3 +50,12 @@ table {
   white-space: nowrap;
   font-size: 13px;
 }
+
+th,
+td {
+  text-transform: capitalize !important;
+}
+
+small {
+  cursor: pointer;
+}
