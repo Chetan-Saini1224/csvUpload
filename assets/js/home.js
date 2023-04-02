@@ -72,8 +72,8 @@ function getFileData(id) {
 
 function tableHeader(headings) {
   return `<tr>
-      ${headings.map((col) => {
-        return `<th>${col}</th>`;
+      ${headings.map((col, idx) => {
+        return `<th> <small onclick="sortTable(${idx})">^</small> ${col}</th>`;
       })}
       </tr>`;
 }
