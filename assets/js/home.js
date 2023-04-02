@@ -57,6 +57,7 @@ function getFileData(id) {
         $(".active").removeClass("active");
         $(`#${id}`).addClass("active");
         $("#search-field").css("display", "block");
+        $("input[type='text']").attr("placeholder", "Search");
         $("#empty-message").css("display", "none");
         $("#headings").html(tableHeader(data.headings));
         $("#table-body").html(tableRows(data.tabledata));
